@@ -1,0 +1,166 @@
+time_ns,net,value,frame,channel,reason
+0,TX_ADDR0,0,0,-1,safe boot
+0,TX_ADDR1,0,0,-1,safe boot
+0,TX_ADDR2,0,0,-1,safe boot
+0,TX_ADDR3,0,0,-1,safe boot
+0,TX_ADDR4,0,0,-1,safe boot
+0,RX_ADDR0,0,0,-1,safe boot
+0,RX_ADDR1,0,0,-1,safe boot
+0,RX_ADDR2,0,0,-1,safe boot
+0,RX_ADDR3,0,0,-1,safe boot
+0,RX_ADDR4,0,0,-1,safe boot
+0,TX_EN,0,0,-1,safe boot
+0,RX_EN,0,0,-1,safe boot
+0,LIGHT_SET,0,0,-1,safe boot
+100300,LIGHT_SET,512,1,0,DAC code
+100400,RX_EN,1,1,0,channel_start: rx(true)
+193000,TX_EN,1,1,0,OFF processed: tx(true)
+285600,TX_EN,0,1,0,DMA ISR: tx(false)
+285700,RX_EN,0,1,1,channel_start: rx(false)
+285800,TX_ADDR0,1,1,1,single masked GPIO write
+285800,RX_ADDR0,1,1,1,single masked GPIO write
+286000,RX_EN,1,1,1,channel_start: rx(true)
+378600,TX_EN,1,1,1,OFF processed: tx(true)
+471200,TX_EN,0,1,1,DMA ISR: tx(false)
+471300,RX_EN,0,1,2,channel_start: rx(false)
+471400,TX_ADDR0,0,1,2,single masked GPIO write
+471400,TX_ADDR1,1,1,2,single masked GPIO write
+471400,RX_ADDR0,0,1,2,single masked GPIO write
+471400,RX_ADDR1,1,1,2,single masked GPIO write
+471600,RX_EN,1,1,2,channel_start: rx(true)
+564200,TX_EN,1,1,2,OFF processed: tx(true)
+656800,TX_EN,0,1,2,DMA ISR: tx(false)
+656900,RX_EN,0,1,3,channel_start: rx(false)
+657000,TX_ADDR0,1,1,3,single masked GPIO write
+657000,RX_ADDR0,1,1,3,single masked GPIO write
+657200,RX_EN,1,1,3,channel_start: rx(true)
+749800,TX_EN,1,1,3,OFF processed: tx(true)
+842400,TX_EN,0,1,3,DMA ISR: tx(false)
+842500,RX_EN,0,1,4,channel_start: rx(false)
+842600,TX_ADDR0,0,1,4,single masked GPIO write
+842600,TX_ADDR1,0,1,4,single masked GPIO write
+842600,TX_ADDR2,1,1,4,single masked GPIO write
+842600,RX_ADDR0,0,1,4,single masked GPIO write
+842600,RX_ADDR1,0,1,4,single masked GPIO write
+842600,RX_ADDR2,1,1,4,single masked GPIO write
+842800,RX_EN,1,1,4,channel_start: rx(true)
+935400,TX_EN,1,1,4,OFF processed: tx(true)
+1028000,TX_EN,0,1,4,DMA ISR: tx(false)
+1028100,RX_EN,0,1,5,channel_start: rx(false)
+1028200,TX_ADDR0,1,1,5,single masked GPIO write
+1028200,RX_ADDR0,1,1,5,single masked GPIO write
+1028400,RX_EN,1,1,5,channel_start: rx(true)
+1121000,TX_EN,1,1,5,OFF processed: tx(true)
+1213600,TX_EN,0,1,5,DMA ISR: tx(false)
+1213700,RX_EN,0,1,6,channel_start: rx(false)
+1213800,TX_ADDR0,0,1,6,single masked GPIO write
+1213800,TX_ADDR1,1,1,6,single masked GPIO write
+1213800,RX_ADDR0,0,1,6,single masked GPIO write
+1213800,RX_ADDR1,1,1,6,single masked GPIO write
+1214000,RX_EN,1,1,6,channel_start: rx(true)
+1306600,TX_EN,1,1,6,OFF processed: tx(true)
+1399200,TX_EN,0,1,6,DMA ISR: tx(false)
+1399300,RX_EN,0,1,7,channel_start: rx(false)
+1399400,TX_ADDR0,1,1,7,single masked GPIO write
+1399400,RX_ADDR0,1,1,7,single masked GPIO write
+1399600,RX_EN,1,1,7,channel_start: rx(true)
+1492200,TX_EN,1,1,7,OFF processed: tx(true)
+1584800,TX_EN,0,1,7,DMA ISR: tx(false)
+1584900,RX_EN,0,1,8,channel_start: rx(false)
+1585000,TX_ADDR0,0,1,8,single masked GPIO write
+1585000,TX_ADDR1,0,1,8,single masked GPIO write
+1585000,TX_ADDR2,0,1,8,single masked GPIO write
+1585000,TX_ADDR3,1,1,8,single masked GPIO write
+1585000,RX_ADDR0,0,1,8,single masked GPIO write
+1585000,RX_ADDR1,0,1,8,single masked GPIO write
+1585000,RX_ADDR2,0,1,8,single masked GPIO write
+1585000,RX_ADDR3,1,1,8,single masked GPIO write
+1585200,RX_EN,1,1,8,channel_start: rx(true)
+1677800,TX_EN,1,1,8,OFF processed: tx(true)
+1770400,TX_EN,0,1,8,DMA ISR: tx(false)
+1770500,RX_EN,0,1,9,channel_start: rx(false)
+1770600,TX_ADDR0,1,1,9,single masked GPIO write
+1770600,RX_ADDR0,1,1,9,single masked GPIO write
+1770800,RX_EN,1,1,9,channel_start: rx(true)
+1863400,TX_EN,1,1,9,OFF processed: tx(true)
+1956000,TX_EN,0,1,9,DMA ISR: tx(false)
+1956100,RX_EN,0,1,10,channel_start: rx(false)
+1956200,TX_ADDR0,0,1,10,single masked GPIO write
+1956200,TX_ADDR1,1,1,10,single masked GPIO write
+1956200,RX_ADDR0,0,1,10,single masked GPIO write
+1956200,RX_ADDR1,1,1,10,single masked GPIO write
+1956400,RX_EN,1,1,10,channel_start: rx(true)
+2049000,TX_EN,1,1,10,OFF processed: tx(true)
+2141600,TX_EN,0,1,10,DMA ISR: tx(false)
+2141700,RX_EN,0,1,11,channel_start: rx(false)
+2141800,TX_ADDR0,1,1,11,single masked GPIO write
+2141800,RX_ADDR0,1,1,11,single masked GPIO write
+2142000,RX_EN,1,1,11,channel_start: rx(true)
+2234600,TX_EN,1,1,11,OFF processed: tx(true)
+2327200,TX_EN,0,1,11,DMA ISR: tx(false)
+2327300,RX_EN,0,1,12,channel_start: rx(false)
+2327400,TX_ADDR0,0,1,12,single masked GPIO write
+2327400,TX_ADDR1,0,1,12,single masked GPIO write
+2327400,TX_ADDR2,1,1,12,single masked GPIO write
+2327400,RX_ADDR0,0,1,12,single masked GPIO write
+2327400,RX_ADDR1,0,1,12,single masked GPIO write
+2327400,RX_ADDR2,1,1,12,single masked GPIO write
+2327600,RX_EN,1,1,12,channel_start: rx(true)
+2420200,TX_EN,1,1,12,OFF processed: tx(true)
+2512800,TX_EN,0,1,12,DMA ISR: tx(false)
+2512900,RX_EN,0,1,13,channel_start: rx(false)
+2513000,TX_ADDR0,1,1,13,single masked GPIO write
+2513000,RX_ADDR0,1,1,13,single masked GPIO write
+2513200,RX_EN,1,1,13,channel_start: rx(true)
+2605800,TX_EN,1,1,13,OFF processed: tx(true)
+2698400,TX_EN,0,1,13,DMA ISR: tx(false)
+2698500,RX_EN,0,1,14,channel_start: rx(false)
+2698600,TX_ADDR0,0,1,14,single masked GPIO write
+2698600,TX_ADDR1,1,1,14,single masked GPIO write
+2698600,RX_ADDR0,0,1,14,single masked GPIO write
+2698600,RX_ADDR1,1,1,14,single masked GPIO write
+2698800,RX_EN,1,1,14,channel_start: rx(true)
+2791400,TX_EN,1,1,14,OFF processed: tx(true)
+2884000,TX_EN,0,1,14,DMA ISR: tx(false)
+2884100,RX_EN,0,1,15,channel_start: rx(false)
+2884200,TX_ADDR0,1,1,15,single masked GPIO write
+2884200,RX_ADDR0,1,1,15,single masked GPIO write
+2884400,RX_EN,1,1,15,channel_start: rx(true)
+2977000,TX_EN,1,1,15,OFF processed: tx(true)
+3069600,TX_EN,0,1,15,DMA ISR: tx(false)
+3069700,RX_EN,0,1,16,channel_start: rx(false)
+3069800,TX_ADDR0,0,1,16,single masked GPIO write
+3069800,TX_ADDR1,0,1,16,single masked GPIO write
+3069800,TX_ADDR2,0,1,16,single masked GPIO write
+3069800,TX_ADDR3,0,1,16,single masked GPIO write
+3069800,TX_ADDR4,1,1,16,single masked GPIO write
+3069800,RX_ADDR0,0,1,16,single masked GPIO write
+3069800,RX_ADDR1,0,1,16,single masked GPIO write
+3069800,RX_ADDR2,0,1,16,single masked GPIO write
+3069800,RX_ADDR3,0,1,16,single masked GPIO write
+3069800,RX_ADDR4,1,1,16,single masked GPIO write
+3070000,RX_EN,1,1,16,channel_start: rx(true)
+3162600,TX_EN,1,1,16,OFF processed: tx(true)
+3255200,TX_EN,0,1,16,DMA ISR: tx(false)
+3255300,RX_EN,0,1,17,channel_start: rx(false)
+3255400,TX_ADDR0,1,1,17,single masked GPIO write
+3255400,RX_ADDR0,1,1,17,single masked GPIO write
+3255600,RX_EN,1,1,17,channel_start: rx(true)
+3348200,TX_EN,1,1,17,OFF processed: tx(true)
+3440800,TX_EN,0,1,17,DMA ISR: tx(false)
+3440900,RX_EN,0,1,18,channel_start: rx(false)
+3441000,TX_ADDR0,0,1,18,single masked GPIO write
+3441000,TX_ADDR1,1,1,18,single masked GPIO write
+3441000,RX_ADDR0,0,1,18,single masked GPIO write
+3441000,RX_ADDR1,1,1,18,single masked GPIO write
+3441200,RX_EN,1,1,18,channel_start: rx(true)
+3533800,TX_EN,1,1,18,OFF processed: tx(true)
+3626400,TX_EN,0,1,18,DMA ISR: tx(false)
+3626500,RX_EN,0,1,19,channel_start: rx(false)
+3626600,TX_ADDR0,1,1,19,single masked GPIO write
+3626600,RX_ADDR0,1,1,19,single masked GPIO write
+3626800,RX_EN,1,1,19,channel_start: rx(true)
+3719400,TX_EN,1,1,19,OFF processed: tx(true)
+3812000,TX_EN,0,1,19,DMA ISR: tx(false)
+3812100,RX_EN,0,1,19,frame safe
+3812200,LIGHT_SET,0,1,19,frame safe DAC zero

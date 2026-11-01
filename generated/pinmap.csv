@@ -1,0 +1,14 @@
+net,port,pin,fw_alias,kind,initial
+TX_ADDR0,PB0,47,TX_A0,digital_output,0
+TX_ADDR1,PB1,48,TX_A1,digital_output,0
+TX_ADDR2,PB2,50,TX_A2,digital_output,0
+TX_ADDR3,PB3,51,TX_A3,digital_output,0
+TX_ADDR4,PB4,52,TX_A4,digital_output,0
+RX_ADDR0,PB6,58,RX_A0,digital_output,0
+RX_ADDR1,PB7,59,RX_A1,digital_output,0
+RX_ADDR2,PB8,60,RX_A2,digital_output,0
+RX_ADDR3,PB9,61,RX_A3,digital_output,0
+RX_ADDR4,PB10,62,RX_A4,digital_output,0
+TX_EN,PB5,53,TX_EN,digital_output,0
+RX_EN,PB11,63,RX_EN,digital_output,0
+LIGHT_SET,PA15,8,DAC_OUT,dac_output,0

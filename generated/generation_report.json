@@ -1,0 +1,19 @@
+{
+  "firmware_commit": "869e4cc84f9586cf94acd9b9e71ced40c42c6fc3",
+  "model": "nominal state-machine replay, not measured timing",
+  "signals": 13,
+  "frames": 1,
+  "adc_samples": 160,
+  "stop_ns": 3822200,
+  "assumptions": [
+    "Nominal replay of sensor.c, not instruction-accurate FW execution or measured peripheral timing.",
+    "IO writes spaced by 100 ns, main/DMA latency zero, ADC conversion 500 ns: placeholders, not TI guarantees.",
+    "Digital edges 5 ns and output resistance 33 ohm are placeholders, not an IBIS model.",
+    "DAC uses ideal code*VREF/4096, a 1 us linear ramp and 100 ohm output resistance; not a settling/glitch model.",
+    "3.3 V is an assumed board supply/reference. MCU supply current and package/PDN effects are not modeled.",
+    "Start delay 100 us and frame gap 10 us are analysis scenario values; no boot/PLL timing or UART traffic is replayed.",
+    "Changing timings/codes changes the analysis scenario only; it does not update FW automatically.",
+    "Demo RC loads and transient step are for connectivity smoke testing, not validated EMI analysis."
+  ],
+  "config_sha256": "24ea48d3e552a74a35b81107ca728d4bf35dfad76cf38aecbeb8c20d7b0793a1"
+}

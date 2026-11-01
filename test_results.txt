@@ -1,0 +1,12 @@
+test_adc_count_interval_apertures_and_tx_state (test_bridge.BridgeTests.test_adc_count_interval_apertures_and_tx_state) ... ok
+test_address_sequence_and_blank_before_selection (test_bridge.BridgeTests.test_address_sequence_and_blank_before_selection) ... ok
+test_dac_voltage_and_monotonic_pwl (test_bridge.BridgeTests.test_dac_voltage_and_monotonic_pwl) ... ok
+test_final_safe_and_multiple_frames (test_bridge.BridgeTests.test_final_safe_and_multiple_frames) ... ok
+test_fw_reference_integrity (test_bridge.BridgeTests.test_fw_reference_integrity) ... ok
+test_invalid_input_rejected (test_bridge.BridgeTests.test_invalid_input_rejected) ... ok
+test_spice_generated_ports_and_sources (test_bridge.BridgeTests.test_spice_generated_ports_and_sources) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.068s
+
+OK

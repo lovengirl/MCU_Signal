@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "device": "MSPM0G3507SPMR",
+  "package": "LQFP-64(PM)",
+  "provenance": {
+    "repository": "https://github.com/lovengirl/TI_MCU",
+    "commit": "869e4cc84f9586cf94acd9b9e71ced40c42c6fc3",
+    "sha256": {
+      "board.syscfg": "d675fa240aebe8235473c6b713a71dc00da5eca34189006c8f8274d15952ceb9",
+      "include/sensor.h": "bbe5afd2d6ffe93d3e156794c214d11b0b518ce32de3541de99be4059c1f289b",
+      "src/platform_mspm0.c": "24b7d909ccee4d6169b5bdca7f44b7ff7632b1c1b5dd06275f44291c587a545e",
+      "src/sensor.c": "61db4e4899171e8a6ef9179253018b1c3d52ac67c1f759c0713d9cf22dc9a2e3"
+    }
+  },
+  "signals": [
+    {
+      "net": "TX_ADDR0",
+      "port": "PB0",
+      "pin": 47,
+      "fw_alias": "TX_A0",
+      "kind": "digital_output",
+      "initial": 0
+    },
+    {
+      "net": "TX_ADDR1",
+      "port": "PB1",
+      "pin": 48,
+      "fw_alias": "TX_A1",
+      "kind": "digital_output",
+      "initial": 0
+    },
+    {
+      "net": "TX_ADDR2",
+      "port": "PB2",
+      "pin": 50,
+      "fw_alias": "TX_A2",
+      "kind": "digital_output",
+      "initial": 0
+    },
+    {
+      "net": "TX_ADDR3",
+      "port": "PB3",
+      "pin": 51,
+      "fw_alias": "TX_A3",
+      "kind": "digital_output",
+      "initial": 0
+    },
+    {
+      "net": "TX_ADDR4",
+      "port": "PB4",
+      "pin": 52,
+      "fw_alias": "TX_A4",
+      "kind": "digital_output",
+      "initial": 0
+    },
+    {
+      "net": "RX_ADDR0",
+      "port": "PB6",
+      "pin": 58,
+      "fw_alias": "RX_A0",
+      "kind": "digital_output",
+      "initial": 0
+    },
+    {
+      "net": "RX_ADDR1",
+      "port": "PB7",
+      "pin": 59,
+      "fw_alias": "RX_A1",
+      "kind": "digital_output",
+      "initial": 0
+    },
+    {
+      "net": "RX_ADDR2",
+      "port": "PB8",
+      "pin": 60,
+      "fw_alias": "RX_A2",
+      "kind": "digital_output",
+      "initial": 0
+    },
+    {
+      "net": "RX_ADDR3",
+      "port": "PB9",
+      "pin": 61,
+      "fw_alias": "RX_A3",
+      "kind": "digital_output",
+      "initial": 0
+    },
+    {
+      "net": "RX_ADDR4",
+      "port": "PB10",
+      "pin": 62,
+      "fw_alias": "RX_A4",
+      "kind": "digital_output",
+      "initial": 0
+    },
+    {
+      "net": "TX_EN",
+      "port": "PB5",
+      "pin": 53,
+      "fw_alias": "TX_EN",
+      "kind": "digital_output",
+      "initial": 0
+    },
+    {
+      "net": "RX_EN",
+      "port": "PB11",
+      "pin": 63,
+      "fw_alias": "RX_EN",
+      "kind": "digital_output",
+      "initial": 0
+    },
+    {
+      "net": "LIGHT_SET",
+      "port": "PA15",
+      "pin": 8,
+      "fw_alias": "DAC_OUT",
+      "kind": "dac_output",
+      "initial": 0
+    }
+  ],
+  "scenario": {
+    "name": "nominal_single_frame",
+    "frames": 1
+  },
+  "dac_codes": [
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512
+  ],
+  "timing_ns": {
+    "select": 50000,
+    "light": 50000,
+    "sample_period": 10000,
+    "adc_acquire": 2000,
+    "adc_convert_assumed": 500,
+    "start_delay_assumed": 100000,
+    "io_step_assumed": 100,
+    "main_latency_assumed": 0,
+    "dma_latency_assumed": 0,
+    "frame_gap_assumed": 10000
+  },
+  "electrical": {
+    "logic_high_v": 3.3,
+    "dac_vref_v": 3.3,
+    "rise_ns": 5,
+    "fall_ns": 5,
+    "digital_rout_ohm": 33,
+    "dac_rout_ohm": 100,
+    "dac_transition_ns": 1000
+  },
+  "assumptions": [
+    "Nominal replay of sensor.c, not instruction-accurate FW execution or measured peripheral timing.",
+    "IO writes spaced by 100 ns, main/DMA latency zero, ADC conversion 500 ns: placeholders, not TI guarantees.",
+    "Digital edges 5 ns and output resistance 33 ohm are placeholders, not an IBIS model.",
+    "DAC uses ideal code*VREF/4096, a 1 us linear ramp and 100 ohm output resistance; not a settling/glitch model.",
+    "3.3 V is an assumed board supply/reference. MCU supply current and package/PDN effects are not modeled.",
+    "Start delay 100 us and frame gap 10 us are analysis scenario values; no boot/PLL timing or UART traffic is replayed.",
+    "Changing timings/codes changes the analysis scenario only; it does not update FW automatically.",
+    "Demo RC loads and transient step are for connectivity smoke testing, not validated EMI analysis."
+  ]
+}
